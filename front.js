@@ -15,7 +15,6 @@ function fetching(){
   
       container.innerHTML = ""; 
       
-  
       data.forEach((dato, index) => {
         const div = document.createElement("div");
         div.textContent = dato.Nombre; 

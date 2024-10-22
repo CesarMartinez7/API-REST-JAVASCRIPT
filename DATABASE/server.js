@@ -10,10 +10,12 @@ app.use(cors())
 const conec = mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"oyasumipunpun",
+    password:"oyasumi",
     database:"nodomobiliario"
 });
 
+
+conec.exe
 
 conec.connect((err)=>{
     if(err){
@@ -30,9 +32,15 @@ app.get("/datos",(req,res)=>{
     })
 })
 
+app.post("/login",(req,respuest)=>{
+    
+})
+
+
 
 app.listen(3000,()=>{
     console.log("Servidor corriendo el puerto 3000")
+    console.log("Server: http://localhost:3000/datos")
 })
 
 
